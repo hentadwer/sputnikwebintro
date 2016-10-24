@@ -1,27 +1,29 @@
 <?php
 // Guardar los datos recibidos en variables:
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-$mensaje = $_POST['mensaje'];
+$first_name = $_POST['first_name'];
+$last_name = $_POST['last_name'];
+$contact_email = $_POST['contact_email'];
+$subject = $_POST['contact_subject'];
+$message = $_POST['message'];
 // Definir el correo de destino:
 $dest = "sputnikweb@gmail.com";
 
 // Estas son cabeceras que se usan para evitar que el correo llegue a SPAM:
-$headers = "From: $nombre <$email>\r\n";
+$headers = "From: $first_name <$contact_email>\r\n";
 $headers .= "X-Mailer: PHP5\n";
 $headers .= 'MIME-Version: 1.0' . "\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 // Aqui definimos el asunto y armamos el cuerpo del mensaje
 $asunto = "Contacto";
-$cuerpo = "Nombre: ".$nombre."<br>";
-$cuerpo .= "Email: ".$email."<br>";
-$cuerpo .= "Telefono: ".$telefono."<br>";
-$cuerpo .= "Mensaje: ".$mensaje;
+$cuerpo = "Nombre: ".$first_name."<br>";
+$cuerpo .= "Apellido: ".$last_name."<br>";
+$cuerpo .= "Email: ".$contact_email."<br>";
+$cuerpo .= "Asunto: ".$subject."<br>";
+$cuerpo .= "Mensaje: ".$message;
 
 // Esta es una pequena validación, que solo envie el correo si todas las variables tiene algo de contenido:
-if($nombre != '' && $email != '' && $telefono != '' && $mensaje != ''){
-    mail($dest,$asunto,$cuerpo,$headers); //ENVIAR!
+if($first_name != '' && $last_name != '' && $contact_email != '' && $subject != '' && $message != ''){
+    mail($dest,$subject,$cuerpo,$headers); //ENVIAR!
 }
 ?>
