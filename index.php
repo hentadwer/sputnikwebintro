@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>	Sputnikweb Proximamente</title>
-	<meta name="descripción" content="Sputnikweb Contenido para lanzamiento" >
-	<meta name="Autor" content="sputnikweb">
-	<meta name="robots" content="index, follow">
-	
+	<meta name="description" content="Sputnikweb Contenido para lanzamiento de la linea de soporte desarrollo y tienda virtual. (medellin colombia)" >
+	<meta name="author" content="sputnikweb">
+	<meta name="robots" content="Index, Follow">
+
 
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
