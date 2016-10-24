@@ -5,6 +5,8 @@
 	<title>	Sputnikweb Proximamente</title>
 	<meta name="descripción" content="Sputnikweb Contenido para lanzamiento" >
 	<meta name="Autor" content="sputnikweb">
+	<meta name="robots" content="index, follow">
+	
 
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
